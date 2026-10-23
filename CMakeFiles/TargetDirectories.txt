@@ -1,0 +1,3 @@
+/home/lilyb/school/parallel/a1/CMakeFiles/a1.dir
+/home/lilyb/school/parallel/a1/CMakeFiles/edit_cache.dir
+/home/lilyb/school/parallel/a1/CMakeFiles/rebuild_cache.dir
