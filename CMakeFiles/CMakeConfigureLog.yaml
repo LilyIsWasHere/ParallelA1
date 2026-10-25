@@ -1218,3 +1218,102 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/lilyb/school/parallel/a1/CMakeFiles/CMakeScratch/TryCompile-rTJffW"
+      binary: "/home/lilyb/school/parallel/a1/CMakeFiles/CMakeScratch/TryCompile-rTJffW"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lilyb/school/parallel/a1/CMakeFiles/CMakeScratch/TryCompile-rTJffW'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9378b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9378b.dir/build.make CMakeFiles/cmTC_9378b.dir/build
+        gmake[1]: Entering directory '/home/lilyb/school/parallel/a1/CMakeFiles/CMakeScratch/TryCompile-rTJffW'
+        Building C object CMakeFiles/cmTC_9378b.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_9378b.dir/test_mpi.c.o -c /home/lilyb/school/parallel/a1/CMakeFiles/CMakeScratch/TryCompile-rTJffW/test_mpi.c
+        Linking C executable cmTC_9378b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9378b.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_9378b.dir/test_mpi.c.o -o cmTC_9378b  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so 
+        gmake[1]: Leaving directory '/home/lilyb/school/parallel/a1/CMakeFiles/CMakeScratch/TryCompile-rTJffW'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/home/lilyb/school/parallel/a1/CMakeFiles/CMakeScratch/TryCompile-d6POO0"
+      binary: "/home/lilyb/school/parallel/a1/CMakeFiles/CMakeScratch/TryCompile-d6POO0"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lilyb/school/parallel/a1/CMakeFiles/CMakeScratch/TryCompile-d6POO0'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4bf23/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4bf23.dir/build.make CMakeFiles/cmTC_4bf23.dir/build
+        gmake[1]: Entering directory '/home/lilyb/school/parallel/a1/CMakeFiles/CMakeScratch/TryCompile-d6POO0'
+        Building CXX object CMakeFiles/cmTC_4bf23.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -std=gnu++20 -o CMakeFiles/cmTC_4bf23.dir/test_mpi.cpp.o -c /home/lilyb/school/parallel/a1/CMakeFiles/CMakeScratch/TryCompile-d6POO0/test_mpi.cpp
+        Linking CXX executable cmTC_4bf23
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4bf23.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_4bf23.dir/test_mpi.cpp.o -o cmTC_4bf23  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so 
+        gmake[1]: Leaving directory '/home/lilyb/school/parallel/a1/CMakeFiles/CMakeScratch/TryCompile-d6POO0'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/lilyb/school/parallel/a1/CMakeFiles/CMakeScratch/TryCompile-o5Ee18"
+      binary: "/home/lilyb/school/parallel/a1/CMakeFiles/CMakeScratch/TryCompile-o5Ee18"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lilyb/school/parallel/a1/CMakeFiles/CMakeScratch/TryCompile-o5Ee18'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_38f2a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_38f2a.dir/build.make CMakeFiles/cmTC_38f2a.dir/build
+        gmake[1]: Entering directory '/home/lilyb/school/parallel/a1/CMakeFiles/CMakeScratch/TryCompile-o5Ee18'
+        Building CXX object CMakeFiles/cmTC_38f2a.dir/test_mpi.cpp.o
+        /usr/bin/c++  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -std=gnu++20 -o CMakeFiles/cmTC_38f2a.dir/test_mpi.cpp.o -c /home/lilyb/school/parallel/a1/CMakeFiles/CMakeScratch/TryCompile-o5Ee18/test_mpi.cpp
+        Linking CXX executable cmTC_38f2a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_38f2a.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_38f2a.dir/test_mpi.cpp.o -o cmTC_38f2a  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so 
+        gmake[1]: Leaving directory '/home/lilyb/school/parallel/a1/CMakeFiles/CMakeScratch/TryCompile-o5Ee18'
+        
+      exitCode: 0
+...
