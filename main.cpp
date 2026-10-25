@@ -10,6 +10,9 @@ double monte_carlo_integral(long samples) {
 
     srand(time(nullptr));
 
+    double starttime, endtime;
+    starttime = MPI_Wtime();
+
     double sum = 0.0;
     for (long i = 0; i < samples; ++i) {
         // Simulation
@@ -17,6 +20,10 @@ double monte_carlo_integral(long samples) {
 
         sum += sqrt(1 - x * x);
     }
+
+    endtime   = MPI_Wtime();
+    printf("%f seconds\n",endtime-starttime);
+    printf("Pi = %f\n", sum / samples);
 
 #else
 
