@@ -1,7 +1,7 @@
 #include <iostream>
 #include <mpi.h>
 #include <cmath>
-#define PARALLEL 1;
+//#define PARALLEL 1;
 
 
 
@@ -24,6 +24,9 @@ double monte_carlo_integral(long samples) {
     int npes, myrank;
     MPI_Comm_size(MPI_COMM_WORLD, &npes);
     MPI_Comm_rank(MPI_COMM_WORLD, &myrank);
+	
+
+    samples = samples * npes;
 
     double starttime, endtime;
     if (myrank == 0) {
@@ -184,7 +187,7 @@ int main(int argc, char** argv) {
 
     MPI_Init(&argc, &argv);
 
-    monte_carlo_integral(1000000000);
+    monte_carlo_integral(10000000);
 
     MPI_Finalize();
 }

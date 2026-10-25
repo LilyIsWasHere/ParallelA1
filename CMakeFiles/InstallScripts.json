@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/l_barke/ParallelA1/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
